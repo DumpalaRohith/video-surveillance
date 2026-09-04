@@ -269,27 +269,7 @@ From the assignment's "nice to have" list:
 - **Ground-truth evaluation (MOTA/MOTP)** — `src/evaluate.py`, tested across 3 MOT17
   sequences spanning crowd density and lighting
 
-## Known limitations
-
-- **Not true long-term re-identification.** ByteTrack (default) re-associates through
-  brief occlusion via motion/IoU only; it has no appearance memory, so a person who leaves
-  the frame for more than `track_buffer` (30 frames, ~1s at 30fps) and re-enters will get a
-  new ID. `--tracker botsort.yaml` adds an appearance embedding and does noticeably better
-  across longer gaps, but is still not robust to a full change of viewpoint or a long
-  absence, and costs extra compute per frame.
-- **Dense-crowd recall vs. ID switches is a trade-off, not a solved problem.** On very
-  crowded, high-resolution scenes (MOT17-04: ~50 people/frame at 1920×1080), small,
-  overlapping, or motion-blurred people are still missed even after the `imgsz` fix
-  (MOTA 0.39 on this clip), and detecting more of the crowd gives ByteTrack more chances to
-  swap IDs between two people who cross paths — both show up in the metrics table above.
-  A stronger re-ID model or a larger detector would push both further, at real speed cost.
-- **Lighting/camera shake** aren't handled explicitly (no histogram equalization, no frame
-  stabilization) — relies entirely on YOLOv8's native robustness. This is measurable, not
-  theoretical: MOT17-10 (night) scores about the same MOTA as MOT17-04 (daylight, 2.5x the
-  crowd density) — see the sequence comparison above. Camera shake wasn't measured directly
-  (no shaky-camera sequence in the clips tested).
-
-## Performance notes
+  ## Performance notes
 
 Measured on: CPU only (no CUDA available in this environment), `yolov8n.pt`, ByteTrack,
 MOT17-04 frames (1920×1080), 100-frame sample.
@@ -311,6 +291,27 @@ when run one at a time.
 A GPU (`--device cuda`) would remove inference as the bottleneck entirely; not available
 to verify in this environment. Memory stays flat over long videos since frames, tracks,
 and CSV/JSON rows are streamed to disk rather than buffered (see Architecture).
+
+## Known limitations
+
+- **Not true long-term re-identification.** ByteTrack (default) re-associates through
+  brief occlusion via motion/IoU only; it has no appearance memory, so a person who leaves
+  the frame for more than `track_buffer` (30 frames, ~1s at 30fps) and re-enters will get a
+  new ID. `--tracker botsort.yaml` adds an appearance embedding and does noticeably better
+  across longer gaps, but is still not robust to a full change of viewpoint or a long
+  absence, and costs extra compute per frame.
+- **Dense-crowd recall vs. ID switches is a trade-off, not a solved problem.** On very
+  crowded, high-resolution scenes (MOT17-04: ~50 people/frame at 1920×1080), small,
+  overlapping, or motion-blurred people are still missed even after the `imgsz` fix
+  (MOTA 0.39 on this clip), and detecting more of the crowd gives ByteTrack more chances to
+  swap IDs between two people who cross paths — both show up in the metrics table above.
+  A stronger re-ID model or a larger detector would push both further, at real speed cost.
+- **Lighting/camera shake** aren't handled explicitly (no histogram equalization, no frame
+  stabilization) — relies entirely on YOLOv8's native robustness. This is measurable, not
+  theoretical: MOT17-10 (night) scores about the same MOTA as MOT17-04 (daylight, 2.5x the
+  crowd density) — see the sequence comparison above. Camera shake wasn't measured directly
+  (no shaky-camera sequence in the clips tested).
+
 
 ## What I'd improve with more time
 
