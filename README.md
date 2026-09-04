@@ -259,6 +259,8 @@ example of the low-confidence, small-object detections discussed under Limitatio
 
 ![VIRAT clip 2 sample](docs/virat_clip2_sample.jpg)
 
+**Note:** The raw input and annotated output videos (`data/`, `outputs/`) didn't upload successfully to this repo — screenshots are included instead (see `docs/`) as evidence of the pipeline's output. I'm still trying to get the videos uploaded; if they don't appear here, I'm happy to share them separately (e.g. via email or a file-sharing link) on request.
+
 ## Beyond the core requirements
 
 From the assignment's "nice to have" list:
