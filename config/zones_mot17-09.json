@@ -1,0 +1,15 @@
+{
+  "zones": [
+    {
+      "name": "storefront_zone",
+      "type": "intrusion",
+      "polygon": [[580, 40], [960, 40], [960, 460], [580, 460]]
+    },
+    {
+      "name": "entrance_waiting_area",
+      "type": "loitering",
+      "polygon": [[650, 260], [900, 260], [900, 480], [650, 480]],
+      "loiter_threshold_seconds": 5
+    }
+  ]
+}

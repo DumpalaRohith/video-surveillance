@@ -1,0 +1,15 @@
+{
+  "zones": [
+    {
+      "name": "restricted_area",
+      "type": "intrusion",
+      "polygon": [[0, 100], [400, 100], [400, 560], [0, 560]]
+    },
+    {
+      "name": "walkway_zone",
+      "type": "loitering",
+      "polygon": [[150, 400], [560, 400], [560, 900], [150, 900]],
+      "loiter_threshold_seconds": 5
+    }
+  ]
+}

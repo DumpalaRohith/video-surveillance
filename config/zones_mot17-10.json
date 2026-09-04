@@ -1,0 +1,15 @@
+{
+  "zones": [
+    {
+      "name": "storefront_zone",
+      "type": "intrusion",
+      "polygon": [[700, 20], [960, 20], [960, 260], [700, 260]]
+    },
+    {
+      "name": "seating_area",
+      "type": "loitering",
+      "polygon": [[220, 170], [470, 170], [470, 320], [220, 320]],
+      "loiter_threshold_seconds": 5
+    }
+  ]
+}
