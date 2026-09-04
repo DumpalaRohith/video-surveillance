@@ -269,7 +269,7 @@ From the assignment's "nice to have" list:
 - **Ground-truth evaluation (MOTA/MOTP)** — `src/evaluate.py`, tested across 3 MOT17
   sequences spanning crowd density and lighting
 
-  ## Performance notes
+## Performance notes
 
 Measured on: CPU only (no CUDA available in this environment), `yolov8n.pt`, ByteTrack,
 MOT17-04 frames (1920×1080), 100-frame sample.
