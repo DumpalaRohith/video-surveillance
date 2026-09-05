@@ -1,0 +1,226 @@
+[
+  {
+    "frame_number": 0,
+    "timestamp": 0.0,
+    "track_id": 3,
+    "bbox": [
+      882.48095703125,
+      464.45892333984375,
+      940.526123046875,
+      624.9331665039062
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8475193977355957
+  },
+  {
+    "frame_number": 0,
+    "timestamp": 0.0,
+    "track_id": 4,
+    "bbox": [
+      970.3956298828125,
+      443.0093994140625,
+      1044.179931640625,
+      617.7232666015625
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8076760768890381
+  },
+  {
+    "frame_number": 23,
+    "timestamp": 0.9595327492699208,
+    "track_id": 2,
+    "bbox": [
+      841.2945556640625,
+      520.9966430664062,
+      919.0763549804688,
+      716.258056640625
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.7745216488838196
+  },
+  {
+    "frame_number": 29,
+    "timestamp": 1.2098456403838131,
+    "track_id": 2,
+    "bbox": [
+      869.8076171875,
+      532.32470703125,
+      947.6145629882812,
+      719.6203002929688
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8033756017684937
+  },
+  {
+    "frame_number": 32,
+    "timestamp": 1.3350020859407594,
+    "track_id": 2,
+    "bbox": [
+      880.568359375,
+      544.7600708007812,
+      957.1681518554688,
+      719.8540649414062
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8315215706825256
+  },
+  {
+    "frame_number": 36,
+    "timestamp": 1.5018773466833542,
+    "track_id": 2,
+    "bbox": [
+      910.8994750976562,
+      543.1123657226562,
+      988.3642578125,
+      719.077880859375
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8334821462631226
+  },
+  {
+    "frame_number": 46,
+    "timestamp": 1.9190654985398417,
+    "track_id": 2,
+    "bbox": [
+      975.3136596679688,
+      570.4054565429688,
+      1047.8726806640625,
+      719.91357421875
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8707321286201477
+  },
+  {
+    "frame_number": 56,
+    "timestamp": 2.336253650396329,
+    "track_id": 2,
+    "bbox": [
+      1038.66748046875,
+      599.297607421875,
+      1111.8453369140625,
+      719.5968627929688
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.6597192883491516
+  },
+  {
+    "frame_number": 71,
+    "timestamp": 2.9620358781810596,
+    "track_id": 2,
+    "bbox": [
+      1161.4771728515625,
+      640.43212890625,
+      1234.9560546875,
+      719.4949340820312
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.4775193929672241
+  },
+  {
+    "frame_number": 120,
+    "timestamp": 5.006257822277847,
+    "track_id": 1,
+    "bbox": [
+      633.869384765625,
+      380.9871826171875,
+      678.8616943359375,
+      505.84490966796875
+    ],
+    "event_type": "loitering",
+    "zone_name": "plaza_zone",
+    "confidence": 0.8667714595794678
+  },
+  {
+    "frame_number": 139,
+    "timestamp": 5.798915310805174,
+    "track_id": 3,
+    "bbox": [
+      666.8026123046875,
+      379.8973693847656,
+      709.411376953125,
+      495.7870788574219
+    ],
+    "event_type": "loitering",
+    "zone_name": "plaza_zone",
+    "confidence": 0.8228460550308228
+  },
+  {
+    "frame_number": 170,
+    "timestamp": 7.092198581560284,
+    "track_id": 4,
+    "bbox": [
+      683.562255859375,
+      356.348388671875,
+      724.3385009765625,
+      470.0809631347656
+    ],
+    "event_type": "loitering",
+    "zone_name": "plaza_zone",
+    "confidence": 0.8242603540420532
+  },
+  {
+    "frame_number": 341,
+    "timestamp": 14.226115978306217,
+    "track_id": 4,
+    "bbox": [
+      856.4566650390625,
+      391.4908142089844,
+      912.2102661132812,
+      512.8773193359375
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.794547975063324
+  },
+  {
+    "frame_number": 351,
+    "timestamp": 14.643304130162704,
+    "track_id": 143,
+    "bbox": [
+      851.449462890625,
+      372.0018615722656,
+      912.5819702148438,
+      501.6808166503906
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.8150548338890076
+  },
+  {
+    "frame_number": 371,
+    "timestamp": 15.477680433875678,
+    "track_id": 197,
+    "bbox": [
+      1009.3770751953125,
+      362.0887451171875,
+      1077.5189208984375,
+      483.35601806640625
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.3978967070579529
+  },
+  {
+    "frame_number": 390,
+    "timestamp": 16.270337922403005,
+    "track_id": 207,
+    "bbox": [
+      1147.3162841796875,
+      311.5231628417969,
+      1204.3587646484375,
+      411.5091857910156
+    ],
+    "event_type": "intrusion",
+    "zone_name": "restricted_area",
+    "confidence": 0.4067419767379761
+  }
+]

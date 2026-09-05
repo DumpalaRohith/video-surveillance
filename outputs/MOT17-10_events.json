@@ -1,0 +1,100 @@
+[
+  {
+    "frame_number": 128,
+    "timestamp": 4.266666666666667,
+    "track_id": 250,
+    "bbox": [
+      689.6300048828125,
+      191.74786376953125,
+      712.511962890625,
+      257.0824279785156
+    ],
+    "event_type": "intrusion",
+    "zone_name": "storefront_zone",
+    "confidence": 0.33657601475715637
+  },
+  {
+    "frame_number": 233,
+    "timestamp": 7.766666666666667,
+    "track_id": 409,
+    "bbox": [
+      676.5657958984375,
+      159.74937438964844,
+      724.9903564453125,
+      247.5823211669922
+    ],
+    "event_type": "intrusion",
+    "zone_name": "storefront_zone",
+    "confidence": 0.45690053701400757
+  },
+  {
+    "frame_number": 468,
+    "timestamp": 15.6,
+    "track_id": 521,
+    "bbox": [
+      409.4925537109375,
+      161.2872772216797,
+      435.2933654785156,
+      237.5126495361328
+    ],
+    "event_type": "loitering",
+    "zone_name": "seating_area",
+    "confidence": 0.677156388759613
+  },
+  {
+    "frame_number": 542,
+    "timestamp": 18.066666666666666,
+    "track_id": 604,
+    "bbox": [
+      340.8022155761719,
+      141.44761657714844,
+      361.1488952636719,
+      198.38963317871094
+    ],
+    "event_type": "loitering",
+    "zone_name": "seating_area",
+    "confidence": 0.6339721083641052
+  },
+  {
+    "frame_number": 559,
+    "timestamp": 18.633333333333333,
+    "track_id": 796,
+    "bbox": [
+      692.5171508789062,
+      105.47756958007812,
+      733.1842651367188,
+      207.10511779785156
+    ],
+    "event_type": "intrusion",
+    "zone_name": "storefront_zone",
+    "confidence": 0.3223585784435272
+  },
+  {
+    "frame_number": 617,
+    "timestamp": 20.566666666666666,
+    "track_id": 758,
+    "bbox": [
+      685.8660278320312,
+      164.6713104248047,
+      715.7562255859375,
+      249.9300994873047
+    ],
+    "event_type": "intrusion",
+    "zone_name": "storefront_zone",
+    "confidence": 0.5995404720306396
+  },
+  {
+    "frame_number": 637,
+    "timestamp": 21.233333333333334,
+    "track_id": 758,
+    "bbox": [
+      738.685302734375,
+      155.46705627441406,
+      775.3397216796875,
+      259.0853576660156
+    ],
+    "event_type": "intrusion",
+    "zone_name": "storefront_zone",
+    "confidence": 0.6656431555747986
+  }
+]
