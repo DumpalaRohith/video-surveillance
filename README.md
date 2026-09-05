@@ -260,16 +260,6 @@ example of the low-confidence, small-object detections discussed under Limitatio
 ![VIRAT clip 2 sample](docs/virat_clip2_sample.jpg)
 
 
-## Beyond the core requirements
-
-From the assignment's "nice to have" list:
-
-- **FPS benchmarks** — above
-- **Configurable alert thresholds & de-duplication** — loiter thresholds in
-  `zones.json`, per-track/zone/event-type alert dedup in `src/events.py`
-- **Ground-truth evaluation (MOTA/MOTP)** — `src/evaluate.py`, tested across 3 MOT17
-  sequences spanning crowd density and lighting
-
 ## Performance notes
 
 Measured on: CPU only (no CUDA available in this environment), `yolov8n.pt`, ByteTrack,
@@ -292,6 +282,16 @@ when run one at a time.
 A GPU (`--device cuda`) would remove inference as the bottleneck entirely; not available
 to verify in this environment. Memory stays flat over long videos since frames, tracks,
 and CSV/JSON rows are streamed to disk rather than buffered (see Architecture).
+
+## Beyond the core requirements
+
+From the assignment's "nice to have" list:
+
+- **FPS benchmarks** — above
+- **Configurable alert thresholds & de-duplication** — loiter thresholds in
+  `zones.json`, per-track/zone/event-type alert dedup in `src/events.py`
+- **Ground-truth evaluation (MOTA/MOTP)** — `src/evaluate.py`, tested across 3 MOT17
+  sequences spanning crowd density and lighting
 
 ## Known limitations
 
